@@ -46,7 +46,7 @@ This project features the simulation of a custom vehicle with **Ackermann steeri
 - **RViz2**
 - **Nav2**
 
-## Installation
+## Local Installation
 
 0. Your need to sure that installation of Gazebo Harmonic and ROS (ros_gz):<br>
    `sudo apt-get install ros-${ROS_DISTRO}-ros-gz`<br>
@@ -77,6 +77,41 @@ This project features the simulation of a custom vehicle with **Ackermann steeri
    ```
 
    > **Note:** Replace `/your/path/` with your actual installation path.
+
+## Docker Installation
+
+You can also run the simulation using Docker, which ensures a consistent environment across different systems.
+
+### Prerequisites
+- Docker
+- Docker Compose
+- NVIDIA Container Toolkit (for GPU support)
+
+### Steps to Run with Docker
+
+1. Clone the repository:
+   ```bash
+   mkdir -p ackermann_sim/src && cd ackermann_sim/src
+   git clone https://github.com/alitekes1/ackermann-vehicle-gzsim-ros2
+   cd ackermann-vehicle-gzsim-ros2
+   ```
+
+2. Build and run the Docker container:
+   ```bash
+   docker compose up --build
+   ```
+
+   Or to run in detached mode:
+   ```bash
+   docker compose up -d --build
+   ```
+
+3. To enter the container:
+   ```bash
+   docker exec -it ackermann_sim bash
+   ```
+   
+> **Note:** Inside the container, you can run the simulation commands as normal.
 
 ## Usage
 
