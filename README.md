@@ -98,14 +98,15 @@ You can also run the simulation using Docker, which ensures a consistent environ
 
 2. Build and run the Docker container:
    ```bash
-   docker compose up --build
+      docker run -it \
+      --name ackermann_sim \
+      --hostname ackermann_sim \
+      --env="DISPLAY=$DISPLAY" \
+      --env="QT_X11_NO_MITSHM=1" \
+      --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
+      --privileged alitekes1/ackermann_sim:latest
    ```
-
-   Or to run in detached mode:
-   ```bash
-   docker compose up -d --build
-   ```
-
+   
 3. To enter the container:
    ```bash
    docker exec -it ackermann_sim bash
