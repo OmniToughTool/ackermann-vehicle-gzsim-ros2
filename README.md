@@ -106,6 +106,10 @@ You can also run the simulation using Docker, which ensures a consistent environ
       --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
       --privileged alitekes1/ackermann_sim:latest
    ```
+   If you want to additional terminal for same container
+   ```bash
+      docker exec -it ackermann_sim bash
+   ```
    
 3. To enter the container:
    ```bash
