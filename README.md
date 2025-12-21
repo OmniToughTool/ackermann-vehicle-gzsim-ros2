@@ -2,6 +2,8 @@
 
 This project features the simulation of a custom vehicle with **Ackermann steering capabilities**, developed using **ROS2** and the **Gazebo Sim Harmonic environment**. The model integrates a variety of sensors and navigation tools for autonomous operation, making it one of the first implementations of an Ackermann steering vehicle in this simulation framework.
 
+### If you like this project, consider giving it a ⭐ to show your support!
+
 ## Table of Contents
 
 - [Ackermann Steering Vehicle Simulation in ROS2 with Gazebo Sim Harmonic](#ackermann-steering-vehicle-simulation-in-ros2-with-gazebo-sim-harmonic)
@@ -24,7 +26,6 @@ This project features the simulation of a custom vehicle with **Ackermann steeri
 - [TF Tree](#tf-tree)
 - [Star History](#star-history)
 
-### If you like this project, consider giving it a ⭐ to show your support!
 ## Features
 
 ### 1. **Ackermann Steering**
@@ -107,7 +108,6 @@ You can also run the simulation using Docker, which ensures a consistent environ
 
 ### Prerequisites
 - Docker
-- Docker Compose
 - NVIDIA Container Toolkit (for GPU support)
 
 ### Steps to Run with Docker
@@ -171,11 +171,12 @@ You can also run the simulation using Docker, which ensures a consistent environ
 
 ## Future Work
 
-1. **Deep Reinforcement Learning (DRL):**
+1. **3D SLAM Support:**
    - Train the vehicle to handle complex scenarios autonomously using advanced DRL algorithms.
 2. **Enhanced Features:**
    - Explore additional sensor configurations and navigation strategies.
-
+3. **Nav2 entegration with 3D Localization**
+   - İnstead of AMCL(2D), More accurate and robust algorithms implementation.
 ## Gallery
 
 ![Screenshot from 2024-09-23 00-09-48.png](https://github.com/user-attachments/assets/dd5604c6-014e-4a7a-9a2f-c4dd237abb37)
