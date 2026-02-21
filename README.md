@@ -180,7 +180,7 @@ You can also run the simulation using Docker, which ensures a consistent environ
 2. **Enhanced Features:**
    - Explore additional sensor configurations and navigation strategies.
 3. **Nav2 entegration with 3D Localization**
-   - İnstead of AMCL(2D), More accurate and robust algorithms implementation.
+   - Instead of AMCL(2D), more accurate and robust algorithms implementation.
 ## Gallery
 
 ![Screenshot from 2024-09-23 00-09-48.png](https://github.com/user-attachments/assets/dd5604c6-014e-4a7a-9a2f-c4dd237abb37)
